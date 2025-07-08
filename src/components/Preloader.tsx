@@ -66,7 +66,7 @@ const Preloader = () => {
       <div className="preloader-content text-center">
         <div className="preloader-logo mb-8">
           <h1 className="text-6xl md:text-8xl font-bold gradient-text mb-4">
-            MILAD
+            TANVI
           </h1>
           <p className="text-lg text-gray-400 tracking-wider">
             Creative Developer

@@ -51,8 +51,11 @@ const AboutSection = () => {
     { name: 'CSS3', icon: '🎨' },
     { name: 'JavaScript', icon: '⚡' },
     { name: 'React', icon: '⚛️' },
-    { name: 'GSAP', icon: '🎭' },
-    { name: 'Node.js', icon: '🚀' }
+    { name: 'NEXT js', icon: '🎭' },
+    { name: 'Node.js', icon: '🚀' },
+    { name:  'Gen AI', icon:'🌀'},{
+      name:  'MongoDB', icon:'🌿'},
+      
   ];
 
   return (
@@ -91,7 +94,7 @@ const AboutSection = () => {
             </p>
             
             {/* Skills Grid */}
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-6 ">
               {skills.map((skill, index) => (
                 <div
                   key={skill.name}

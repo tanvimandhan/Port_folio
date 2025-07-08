@@ -75,9 +75,9 @@ const HeroSection = () => {
         <div className="text-center">
           <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
             Hi, I'm{' '}
-            <span className="gradient-text text-glow">Tanvi</span>
+            <span className="gradient-text text-glow">Tanvi Mandhan</span>
             <br />
-            Web Developer
+            Full-Stack Web Developer
           </h1>
           
           <p className="hero-subtitle text-xl md:text-2xl lg:text-3xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
