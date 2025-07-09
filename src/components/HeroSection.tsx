@@ -77,11 +77,13 @@ const HeroSection = () => {
             Hi, I'm{' '}
             <span className="gradient-text text-glow">Tanvi Mandhan</span>
             <br />
-            Full-Stack Web Developer
+            Aspiring Software Engineer | Web Developer 
           </h1>
           
           <p className="hero-subtitle text-xl md:text-2xl lg:text-3xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Crafting digital experiences that inspire and engage through innovative design and cutting-edge technology.
+            I’m a B.Tech student at IET Lucknow with a passion for building web applications and solving real-world problems through code.  
+Currently sharpening my skills in full-stack development and competitive programming.
+
           </p>
           
           <button className="hero-cta btn-primary text-lg neon-glow">

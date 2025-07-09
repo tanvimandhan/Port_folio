@@ -1,10 +1,16 @@
-import { useState, useEffect } from 'react';
+
+ import { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import emailjs from "@emailjs/browser";
+
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ContactSection = () => {
+
+ const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -58,7 +64,27 @@ const ContactSection = () => {
       }, '-=0.3');
 
   }, []);
-
+  
+  const sendEmail = () => {
+    emailjs.send(
+      "service_5m23rya",    
+      "template_sdd4rid",    
+      {
+        name:formData.name,
+        email:formData.email,
+        message: formData.message,
+      },
+      "mvlQ4ExYb3biWeoVh"      
+    )
+    .then(() => {
+      alert("Mail sent to Tanvi's Gmail 🎉");
+    })
+    .catch((error) => {
+      console.error("Email sending failed", error);
+      alert("Oops! Something went wrong.");
+    }
+  )};
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -122,6 +148,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   name="name"
+                  id='name'
                   placeholder="Your Name"
                   value={formData.name}
                   onChange={handleChange}
@@ -134,6 +161,7 @@ const ContactSection = () => {
                 <input
                   type="email"
                   name="email"
+                  id='email'
                   placeholder="Your Email"
                   value={formData.email}
                   onChange={handleChange}
@@ -145,6 +173,7 @@ const ContactSection = () => {
               <div>
                 <textarea
                   name="message"
+                  id='message'
                   placeholder="Your Message"
                   value={formData.message}
                   onChange={handleChange}
@@ -157,6 +186,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 className="submit-btn w-full btn-primary text-lg font-semibold"
+                onClick={sendEmail}
               >
                 Send Message
               </button>
@@ -214,18 +244,18 @@ const ContactSection = () => {
             
             {/* Social Links */}
             <div className="glass-card p-6 border-black/50">
-              <h3 className="text-xl font-bold mb-4 text-white">
+              <h3 className="text-xl font-bold mb-4 gradient-text">
                 Follow Me
               </h3>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/tanvi-mandhan-897a7129b"
                   className="social-icon w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-neon-blue/20 hover:text-neon-blue transition-all duration-300 group"
                 >
                   <span className="text-xl group-hover:scale-110 transition-transform duration-300">💼</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/tanvimandhan"
                   className="social-icon w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-neon-purple/20 hover:text-neon-purple transition-all duration-300 group"
                 >
                   <span className="text-xl group-hover:scale-110 transition-transform duration-300">🐙</span>
@@ -245,4 +275,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+ export default ContactSection

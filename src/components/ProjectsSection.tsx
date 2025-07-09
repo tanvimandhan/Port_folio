@@ -42,7 +42,7 @@ const ProjectsSection = () => {
       id: 1,
       title: 'E-commerce Platform',
       description: 'Modern e-commerce solution with React and Node.js',
-      image: '/lovable-uploads/c79bd729-90b7-4e15-8583-781402cd1b5e.png',
+      image: '/file3.jpg',
       tech: ['React', 'Node.js', 'MongoDB'],
       link: 'https://github.com/tanvimandhan/E_commerce'
     },
@@ -50,23 +50,23 @@ const ProjectsSection = () => {
       id: 2,
       title: 'Food Delivery Website',
       description: 'Interactive gaming UI with real-time statistics',
-      image: '/lovable-uploads/0ce1ef87-dac3-4b2a-8e50-5eae4780937b.png',
-      tech: ['Vue.js', 'WebGL', 'Socket.io'],
+      image: '/file2.jpg',
+      tech: ['React', 'Node.js', 'MongoDB'],
       link: 'https://github.com/tanvimandhan/Food_delivery'
     },
     {
       id: 3,
       title: 'AI career Coach',
       description: '3D interactive portfolio with Spline integration',
-      image: '/lovable-uploads/40756d5e-0521-4f53-bc07-adbafd3d4de1.png',
-      tech: ['React', 'GSAP', 'Spline'],
+      image: '/file6.jpg',
+      tech: ['Next', 'Gemini', 'Shadcn'],
       link: 'https://github.com/tanvimandhan/OrbitHire'
     },
     {
       id: 4,
       title: 'Learning voice assistant',
       description: 'Animated gaming website with character designs',
-      image: '/lovable-uploads/25f6ee25-db42-4298-8e01-12a76f625735.png',
+      image: '/file7.jpg',
       tech: ['HTML5', 'CSS3', 'JavaScript'],
       link: 'https://github.com/tanvimandhan/Edubot'
     },
@@ -74,7 +74,7 @@ const ProjectsSection = () => {
       id: 5,
       title: 'Alarm and object detector',
       description: 'Web animation tools learning platform',
-      image: '/lovable-uploads/5d6b3537-9df2-423d-90a4-2a4ae821625a.png',
+      image: '/file9.jpg.png',
       tech: ['React', 'GSAP', 'Framer'],
       link: '#'
     },
@@ -82,23 +82,23 @@ const ProjectsSection = () => {
       id: 6,
       title: 'Pdf Reader',
       description: 'Minimalist portfolio with smooth animations',
-      image: '/lovable-uploads/7d6a5ac5-f558-4256-b9bb-621136987f2d.png',
-      tech: ['Next.js', 'Tailwind', 'GSAP'],
+      image: '/file5.jpg',
+      tech: ['Python', 'Streamlit', 'Gemini'],
       link: 'https://github.com/tanvimandhan/PDF_Reader'
     },
     {
       id: 7,
       title: 'Student management system',
       description: 'Minimalist portfolio with smooth animations',
-      image: '/lovable-uploads/7d6a5ac5-f558-4256-b9bb-621136987f2d.png',
-      tech: ['Next.js', 'Tailwind', 'GSAP'],
+      image: '/file8.jpg',
+      tech: ['Next.js', 'Tailwind', 'Javascript'],
       link: 'https://github.com/tanvimandhan/AttendEase'
     },
     {
       id: 8,
       title: 'Portfolio',
       description: 'Minimalist portfolio with smooth animations',
-      image: '/lovable-uploads/7d6a5ac5-f558-4256-b9bb-621136987f2d.png',
+      image: '/file1.jpg',
       tech: ['Next.js', 'Tailwind', 'GSAP'],
       link: '#'
     },
@@ -106,8 +106,8 @@ const ProjectsSection = () => {
       id: 9,
       title: 'Weather App',
       description: 'Minimalist portfolio with smooth animations',
-      image: '/lovable-uploads/7d6a5ac5-f558-4256-b9bb-621136987f2d.png',
-      tech: ['Next.js', 'Tailwind', 'GSAP'],
+      image: '/file4.jpg',
+      tech: ['Next.js', 'API', 'GSAP'],
       link: 'https://github.com/tanvimandhan/WeatherApp'
     }
   ];
@@ -129,18 +129,18 @@ const ProjectsSection = () => {
               >
                 <div className="relative overflow-hidden rounded-lg mb-6">
                   <img
-                    src='/project-1.png'
+                    src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110 "
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 
-                <h3 className="text-xl font-bold mb-3 text-white group-hover:text-neon-blue transition-colors duration-300">
+                <h3 className="text-xl font-bold mb-3 text-black group-hover:text-neon-blue transition-colors duration-300">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-400 mb-4 text-sm">
+                <p className="text-gray-700 mb-4 text-sm">
                   {project.description}
                 </p>
                 
