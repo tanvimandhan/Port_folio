@@ -53,53 +53,36 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cyber-dark via-purple-900/20 to-blue-900/20"></div>
-      
-      {/* Spline 3D Background */}
-      {/* <div className="spline-background absolute inset-0 flex items-center justify-center">
-        <div className="w-full h-full max-w-4xl max-h-4xl">
-          <iframe 
-            src='https://my.spline.design/orb-WjuIE6oyOdo43xpUFPHvn2kh/' 
-            frameBorder='0' 
-            width='100%' 
-            height='100%'
-            className="scale-300 opacity-70"
-          />
-        </div>
-      </div> */}
-      
-      {/* Centered Content */}
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center">
-          <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-            Hi, I'm{' '}
-            <span className="gradient-text text-glow">Tanvi Mandhan</span>
-            <br />
-            Aspiring Software Engineer | Web Developer 
-          </h1>
-          
-          <p className="hero-subtitle text-xl md:text-2xl lg:text-3xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
-            I’m a B.Tech student at IET Lucknow with a passion for building web applications and solving real-world problems through code.  
-Currently sharpening my skills in full-stack development and competitive programming.
+   
+  <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    {/* Background Gradient */}
+    <div className="absolute inset-0 bg-gradient-to-br from-cyber-dark via-purple-900/20 to-blue-900/20 dark:from-black dark:via-gray-900/50 dark:to-blue-950/40"></div>
+    
+    {/* Centered Content */}
+    <div className="container mx-auto px-6 relative z-10">
+      <div className="text-center">
+        <h1 className="hero-title text-3xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight text-gray-900 dark:text-white">
+          Hi, I'm{' '}
+          <span className="gradient-text text-glow">Tanvi Mandhan</span>
+          <br />
+          Web Developer 
+        </h1>
 
-          </p>
-          
-          <button className="hero-cta btn-primary text-lg neon-glow">
-            Hire Me
-          </button>
-        </div>
+        <p className="hero-subtitle text-xl md:text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+          I’m a B.Tech student at IET Lucknow with a passion for building web applications and solving real-world problems through code.  
+        </p>
       </div>
-      
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-neon-blue rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-neon-blue rounded-full mt-2 animate-pulse"></div>
-        </div>
+    </div>
+
+    {/* Scroll Indicator */}
+    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="w-6 h-10 border-2 border-neon-blue rounded-full flex justify-center">
+        <div className="w-1 h-3 bg-neon-blue rounded-full mt-2 animate-pulse"></div>
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
+
 };
 
 export default HeroSection;

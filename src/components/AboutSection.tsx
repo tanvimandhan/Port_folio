@@ -53,66 +53,69 @@ const AboutSection = () => {
     { name: 'React', icon: '⚛️' },
     { name: 'NEXT js', icon: '🎭' },
     { name: 'Node.js', icon: '🚀' },
-    { name:  'Gen AI', icon:'🌀'},{
-      name:  'MongoDB', icon:'🌿'},
+    { name:  'Gen AI', icon:'🌀'},
+    { name:  'MongoDB', icon:'🌿'},
+    { name:  'RAG Agents', icon:'🎯'},
+    { name:  'Gemini', icon:'⚡'},
+    { name:  'Tailwind CSS', icon:'🎨'},
       
   ];
 
   return (
-    <section id="about" className="about-section py-20 relative  bg-blue-900/20">
-      <div className="container mx-auto px-6 ">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left - Image */}
-          <div className="about-image relative">
-            <div className="relative w-90 h-120 mx-auto">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-neon-blue/30 to-neon-purple/30 blur-xl"></div>
-              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-neon-blue/50 hover:border-neon-purple/50 transition-all duration-500 hover:scale-105 hover:rotate-3">
-                <img 
-                  src="/tanvi_profile.jpg" 
-                  alt="Milad - Developer" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-          
-          {/* Right - Content */}
-          <div className="about-content">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-              About Me
-            </h2>
-            
-            <p className="text-lg text-gray-900 mb-8 leading-relaxed">
-              I'm a passionate web developer with expertise in creating immersive digital experiences. 
-              I specialize in modern web technologies and love bringing creative ideas to life through 
-              clean code and innovative design solutions.
-            </p>
-            
-            <p className="text-lg text-gray-900 mb-12 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
-              projects, or sharing knowledge with the developer community.
-            </p>
-            
-            {/* Skills Grid */}
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-6 ">
-              {skills.map((skill, index) => (
-                <div
-                  key={skill.name}
-                  className="skill-icon group glass-card p-4 text-center hover:neon-glow transition-all duration-300 cursor-pointer"
-                >
-                  <div className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">
-                    {skill.icon}
-                  </div>
-                  <p className="text-sm text-gray-400 group-hover:text-neon-blue transition-colors duration-300">
-                    {skill.name}
-                  </p>
-                </div>
-              ))}
-            </div>
+    <section id="about" className="about-section py-20 relative bg-blue-900/20 dark:bg-gray-900/70">
+  <div className="container mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+      
+      {/* Left - Image */}
+      <div className="about-image relative">
+        <div className="relative w-90 h-120 mx-auto">
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-neon-blue/30 to-neon-purple/30 blur-xl"></div>
+          <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-neon-blue/50 hover:border-neon-purple/50 transition-all duration-500 hover:scale-105 hover:rotate-3">
+            <img 
+              src="/tanvi_profile.jpg" 
+              alt="Tanvi - Developer" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
-    </section>
+      
+      {/* Right - Content */}
+      <div className="about-content">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+          About Me
+        </h2>
+        
+        <p className="text-lg text-gray-900 dark:text-gray-300 mb-8 leading-relaxed">
+          Driven and detail-oriented software developer with a strong foundation in full-stack web development and a focus on writing clean, maintainable code. Experienced in building scalable applications using technologies like React, Next.js, TypeScript, and PostgreSQL. 
+          Currently sharpening my skills in Data Structures and Algorithms, full-stack development and competitive programming.
+        </p>
+
+        <p className="text-lg text-gray-900 dark:text-gray-300 mb-12 leading-relaxed">
+          Passionate about solving complex problems through efficient algorithms and constantly striving to learn and grow in the field of software engineering.
+        </p>
+        
+        {/* Skills Grid */}
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+          {skills.map((skill) => (
+            <div
+              key={skill.name}
+              className="skill-icon group glass-card p-4 text-center hover:neon-glow transition-all duration-300 cursor-pointer bg-blue-100 dark:bg-white/10 dark:border dark:border-white/20 rounded-lg"
+            >
+              <div className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300 text-gray-800 dark:text-white">
+                {skill.icon}
+              </div>
+              <p className="text-sm text-gray-900 dark:text-gray-200 group-hover:text-neon-blue transition-colors duration-300">
+                {skill.name}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   );
 };
 

@@ -69,7 +69,7 @@ const Preloader = () => {
             TANVI
           </h1>
           <p className="text-lg text-gray-400 tracking-wider">
-            Creative Developer
+            Web Developer
           </p>
         </div>
         
