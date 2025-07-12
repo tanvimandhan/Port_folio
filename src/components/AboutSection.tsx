@@ -72,7 +72,7 @@ const AboutSection = () => {
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-neon-blue/30 to-neon-purple/30 blur-xl"></div>
           <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-neon-blue/50 hover:border-neon-purple/50 transition-all duration-500 hover:scale-105 hover:rotate-3">
             <img 
-              src="/tanvi_profile.jpg" 
+              src="/hero.jpg" 
               alt="Tanvi - Developer" 
               className="w-full h-full object-cover"
             />

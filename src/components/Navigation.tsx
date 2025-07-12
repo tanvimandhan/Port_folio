@@ -247,7 +247,7 @@ const Navigation = ({ theme, onThemeToggle }: NavbarProps) => {
               className="p-2 rounded-full glass hover:bg-primary/20 transition-all duration-300 hover:scale-110"
             >
               {theme === 'dark' ? (
-                <Sun size={20} className="text-yellow-400" />
+                <Sun size={20} className="text-blue-400" />
               ) : (
                 <Moon size={20} className="text-blue-400" />
               )}
@@ -257,9 +257,14 @@ const Navigation = ({ theme, onThemeToggle }: NavbarProps) => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 rounded-full glass hover:bg-primary/20 transition-all duration-300"
+            className="md:hidden p-2 rounded-full border-2 border-neon-blue/50 hover:border-neon-blue transition-all duration-300 flex items-center justify-center bg-red-400"
+            aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X size={20} /> : <List size={20} />}
+            {isMobileMenuOpen ? (
+              <X size={20} className='text-black  rounded' weight="bold" />
+            ) : (
+              <List size={20}  className="text-black " weight="bold" />
+            )}
           </button>
         </div>
       </nav>
@@ -284,6 +289,20 @@ const Navigation = ({ theme, onThemeToggle }: NavbarProps) => {
           >
             Resume
           </a>
+          {/* Mobile Theme Toggle Button */}
+          <button
+            onClick={() => {
+              onThemeToggle();
+              setIsMobileMenuOpen(false);
+            }}
+            className="mobile-menu-item p-4 rounded-full glass hover:bg-primary/20 transition-all duration-300"
+          >
+            {theme === 'dark' ? (
+              <Sun size={24} className="text-blue-400" />
+            ) : (
+              <Moon size={24} className="text-blue-400" />
+            )}
+          </button>
         </div>
       </div>
     </>
