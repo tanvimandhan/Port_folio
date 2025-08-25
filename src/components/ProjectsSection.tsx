@@ -64,8 +64,8 @@ const ProjectsSection = () => {
     },
     {
       id: 4,
-      title: 'Learning voice assistant',
-      description: 'Voice-powered smart learning assistant',
+      title: 'Github Deeveloper Tool',
+      description: 'Gitub repository Assistant',
       image: '/file7.jpg',
       tech: ['HTML5', 'CSS3', 'JavaScript'],
       link: 'https://github.com/tanvimandhan/Edubot'
