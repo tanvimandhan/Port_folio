@@ -46,7 +46,7 @@ const FloatingElements = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0">
+    <div className="fixed inset-0 pointer-events-none z-0 w-full">
       {/* Floating Orbs */}
       <div className="floating-orb floating-orb-1 w-20 h-20 bg-gradient-to-br from-neon-blue/20 to-transparent top-1/4 left-1/4"></div>
       <div className="floating-orb floating-orb-2 w-16 h-16 bg-gradient-to-br from-neon-purple/15 to-transparent top-1/3 right-1/4"></div>

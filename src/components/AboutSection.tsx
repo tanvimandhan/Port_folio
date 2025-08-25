@@ -62,7 +62,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="about-section py-20 relative bg-blue-900/20 dark:bg-gray-900/70">
+    <section id="about" className="about-section py-20 relative bg-blue-900/20 dark:bg-gray-900/70 w-full">
   <div className="container mx-auto px-6">
     <div className="grid lg:grid-cols-2 gap-16 items-center">
       

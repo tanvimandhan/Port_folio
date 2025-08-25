@@ -54,7 +54,7 @@ const HeroSection = () => {
 
   return (
    
-  <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
     {/* Background Gradient */}
     <div className="absolute inset-0 bg-gradient-to-br from-cyber-dark via-purple-900/20 to-blue-900/20 dark:from-black dark:via-gray-900/50 dark:to-blue-950/40"></div>
     

@@ -62,7 +62,7 @@ const Preloader = () => {
   }, []);
 
   return (
-    <div className="preloader fixed inset-0 z-50 bg-cyber-dark flex items-center justify-center">
+    <div className="preloader fixed inset-0 z-50 bg-cyber-dark flex items-center justify-center w-full">
       <div className="preloader-content text-center">
         <div className="preloader-logo mb-8">
           <h1 className="text-6xl md:text-8xl font-bold gradient-text mb-4">

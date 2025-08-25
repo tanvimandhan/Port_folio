@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="py-12 bg-gray-900 dark:bg-black">
+    <footer className="py-12 bg-gray-900 dark:bg-black w-full">
   <div className="container mx-auto px-6">
     <div className="max-w-6xl mx-auto">
       

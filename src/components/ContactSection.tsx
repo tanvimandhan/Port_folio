@@ -134,7 +134,7 @@ gsap.registerPlugin(ScrollTrigger);
   };
 
   return (
-    <section id="contact" className="contact-section py-20 relative bg-blue-900/20 dark:bg-gray-900/70">
+    <section id="contact" className="contact-section py-20 relative bg-blue-900/20 dark:bg-gray-900/70 w-full">
   <div className="container mx-auto px-6">
     <h2 className="contact-title text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
       Get In Touch

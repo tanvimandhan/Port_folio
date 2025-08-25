@@ -113,7 +113,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="projects-section py-20 relative overflow-hidden bg-blue-900/20 dark:bg-gray-900/70">
+    <section id="projects" className="projects-section py-20 relative overflow-hidden bg-blue-900/20 dark:bg-gray-900/70 w-full">
   <div className="container mx-auto px-6">
     <h2 className="projects-title text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
       Featured Projects
